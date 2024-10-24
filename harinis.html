@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harini Suresh - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #1abc9c;
+        }
+
+        .content {
+            display: none;
+            padding: 3rem;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Section Styles */
+        h2 {
+            color: #2980b9;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Harini Suresh</h1>
+        <p>Data Science Enthusiast | Collaborator | Public Speaker</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="#" onclick="showSection('about')">About Me</a>
+        <a href="#" onclick="showSection('certifications')">Certifications</a>
+        <a href="#" onclick="showSection('case-studies')">Case Studies</a>
+        <a href="#" onclick="showSection('internships')">Internships</a>
+        <a href="#" onclick="showSection('skills')">Skills</a>
+        <a href="#" onclick="showSection('extracurricular')">Extracurricular</a>
+        <a href="#" onclick="showSection('goals')">Future Goals</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div id="about" class="content active">
+        <h2>About Me</h2>
+        <p>I’m Harini Suresh, a dedicated data science enthusiast with a strong focus on collaboration, leadership, and public speaking. I am committed to building meaningful connections and using my empathy and creativity to drive positive change. With a solid analytical mindset and a passion for continuous learning, I aim to leverage data to address real-world challenges and create a lasting impact.</p>
+    </div>
+
+    <div id="certifications" class="content">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Cambridge English Language Assessment: Completed all four levels of the Cambridge English certification.</li>
+            <li>GUVI Geek:
+                <ul>
+                    <li>ChatGPT for Everyone</li>
+                    <li>Python Programming</li>
+                    <li>SWAT.AI Learnathon</li>
+                </ul>
+            </li>
+            <li>Microsoft: Developed Generative AI Solutions with Azure OpenAI Service</li>
+            <li>Infosys:
+                <ul>
+                    <li>Introduction to Agile Methodology</li>
+                    <li>Object-Oriented Programming with Python</li>
+                    <li>Basics of Python</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id="case-studies" class="content">
+        <h2>Case Studies</h2>
+        <p><strong>EduAdvance</strong>: Automated System for Career Advancements of Faculty in Higher Education</p>
+        <p><strong>Role:</strong> Team Leader<br>
+           <strong>Event:</strong> Smart India Hackathon 2024</p>
+        <p>As the team leader for the Smart India Hackathon 2024, I spearheaded a project titled EduAdvance, which focused on developing an automated system aimed at enhancing career advancement opportunities for faculty members in higher education.</p>
+        <h3>Proposed Solution:</h3>
+        <p>EduAdvance is an AI-powered platform designed to support faculty in their professional development. The platform integrates various essential features, including:</p>
+        <ul>
+            <li>Performance Tracking: Allows faculty to monitor their achievements and areas for improvement.</li>
+            <li>Mentorship Opportunities: Connects faculty members with mentors to guide their career progression.</li>
+            <li>Professional Development Resources: Offers access to training and workshops tailored to individual needs.</li>
+            <li>Administrative Automation: Streamlines administrative tasks to allow faculty to focus more on teaching and research.</li>
+        </ul>
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Personalized Career Guidance: Utilizing AI and machine learning to provide tailored career path recommendations based on individual performance and goals.</li>
+            <li>Gamification Elements: Incorporating badges and challenges to increase engagement and motivation among faculty users.</li>
+        </ul>
+        <h3>Innovation and Uniqueness:</h3>
+        <p>EduAdvance stands out as a comprehensive, all-in-one solution specifically designed for academic environments, unlike existing isolated tools that address only parts of the career development process. The platform includes:</p>
+        <ul>
+            <li>Real-time Analytics: Providing immediate insights into faculty performance.</li>
+            <li>Advanced Natural Language Processing (NLP): Enhancing the feedback mechanisms for faculty members.</li>
+            <li>Seamless Integration: Ensuring compatibility with existing institutional systems for a smooth user experience.</li>
+        </ul>
+        <h3>Technical Approach:</h3>
+        <ul>
+            <li>Technologies Used:
+                <ul>
+                    <li>AI & Machine Learning for personalized recommendations and insights.</li>
+                    <li>NLP to facilitate advanced feedback.</li>
+                    <li>Cloud-based Microservices Architecture for scalability and flexibility.</li>
+                    <li>Data Analytics to extract actionable insights from user data.</li>
+                    <li>Programming Languages: Python and JavaScript.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Methodology and Process:</h3>
+        <p>The project adopted a user-centric design approach to ensure easy navigation and engagement. We followed an Agile methodology, enabling iterative development and continuous testing based on user feedback. The integration process involved creating well-defined APIs to ensure EduAdvance could seamlessly connect with existing institutional systems.</p>
+        <p>This project provided me with valuable experience in leading a diverse team, combining technical knowledge with user-centered design, and addressing real-world challenges in the education sector.</p>
+    </div>
+
+    <div id="internships" class="content">
+        <h2>Internship Experience</h2>
+        <p><strong>HCL Technologies, Madurai</strong>: 1 Day</p>
+        <ul>
+            <li>During my internship at HCL Technologies, I learned how the tech industry operates. I also presented a problem statement given by the company, which helped me improve my problem-solving skills.</li>
+        </ul>
+        <p><strong>Indian Blind Association</strong>: 7 Days</p>
+        <ul>
+            <li>I completed a social internship with the Indian Blind Association for a week, helping with online admissions and data entry. This experience allowed me to contribute while gaining practical skills.</li>
+        </ul>
+    </div>
+
+    <div id="skills" class="content">
+        <h2>Skills</h2>
+        <ul>
+            <li>Communication & Public Speaking: Strong in both verbal and written communication, able to engage and inform different audiences.</li>
+            <li>Leadership & Teamwork: Experienced in leading and working with teams through volunteer activities.</li>
+            <li>Creativity: Able to come up with innovative ideas and solutions.</li>
+            <li>Decision Making: Good at making decisions and solving problems quickly.</li>
+            <li>Multitasking: Capable of handling multiple tasks effectively while paying attention to detail.</li>
+        </ul>
+    </div>
+
+    <div id="extracurricular" class="content">
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li>Joint Secretary: Infobytes Professional Society</li>
+            <li>Event Organizer: Technophilia</li>
+            <li>Volunteer: Freshers Day “Aurora’24”</li>
+            <li>Volunteer: MRCAS Connect 2023</li>
+            <li>Master of Ceremony: College Events</li>
+        </ul>
+    </div>
+
+    <div id="goals" class="content">
+        <h2>Future Goals</h2>
+        <ul>
+            <li>Studying Abroad: Gain global exposure and diverse perspectives.</li>
+            <li>Innovating Family Business: Introduce innovative strategies such as QR codes for reviews and live locations.</li>
+            <li>Language Learning: Connect with a broader audience.</li>
+            <li>Continuous Learning: Stay updated with industry trends.</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="content">
+        <h2>Contact</h2>
+        <ul>
+            <li>Email: <a href="mailto:sureshharini545@gmail.com">sureshharini545@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/harini-suresh-08842028a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">linkedin.com/in/harinisuresh</a></li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Harini Suresh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.classList.remove('active'));
+
+            const targetSection = document.getElementById(sectionId);
+            targetSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
